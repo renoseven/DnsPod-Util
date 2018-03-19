@@ -1,2 +1,6 @@
 # DnsPod-Util
-A bash API client of DnsPod.cn
+A bash API client for DnsPod.cn
+
+# Dependencies
+* curl
+* jq
