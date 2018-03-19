@@ -296,5 +296,5 @@ else
 		app_info >&2;
 	fi
 	REST_TOKEN="login_token=$API_ID,$API_KEY&format=$REST_FORMAT&lang=$REST_LANG";
-	#eval "$OPERATION";
+	eval "$OPERATION";
 fi
