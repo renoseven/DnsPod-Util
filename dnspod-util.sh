@@ -14,7 +14,7 @@ REST_RECORD_LIST="Record.List";
 REST_RECORD_CREATE="Record.Create";
 REST_RECORD_MODIFY="Record.Modify";
 REST_RECORD_REMOVE="Record.Remove";
-REST_RECORD_ddns="Record.Ddns";
+REST_RECORD_DDNS="Record.Ddns";
 
 #========================
 # Operations
@@ -55,7 +55,7 @@ function modify() {
 function ddns() {
 	_warn "$FUNCNAME $*";
 	
-	local response=$(_rest_record_update $REST_RECORD_ddns ${@:1:4});
+	local response=$(_rest_record_update $REST_RECORD_DDNS ${@:1:4});
 	if [ -z "$response" ]; then
 		_err "Failed";
 		return 1;
@@ -203,7 +203,6 @@ function _warn() {
 # _format_output
 # usage: _format_output message
 function _format_output() {
-	# printf "[%s] %-20s -- %s\n" "$(date +'%F %T')" "${FUNCNAME[2]}" "$1";
 	printf "[%s] -- %s\n" "$(date +'%F %T')" "$1";
 }
 
