@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Shell script info
 SCRIPT_NAME="DnsPod-Util";
