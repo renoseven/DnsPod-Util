@@ -153,8 +153,8 @@ function _rest_status() {
 #========================
 # Record filter
 #========================
-# _get_record_list
-# usage: _get_record_list function domain sub_domain record_type record_line
+# _traverse_records
+# usage: _traverse_records function domain sub_domain record_type record_line
 function _traverse_records() {
         # _warn "Reading record list...";
         # _log "$*";
@@ -190,7 +190,7 @@ function _record_id_filter() {
         fi
 }
 
-# _record_getinfo_filter
+# _record_info_filter
 # usage: _record_id_filter record domain sub_domain
 function _record_info_filter() {
         # _log "$*";
